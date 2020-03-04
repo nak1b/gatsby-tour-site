@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
+import Layout from '../components/Layout'
 
 export default class tours extends Component {
   render() {
-    return (
-      <div>
-        <span>Tours</span>
-      </div>
-    )
+    return <Layout>Tours</Layout>
   }
 }
