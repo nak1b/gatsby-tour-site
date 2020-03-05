@@ -1,12 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/Layout'
+import { Layout, Hero, Banner } from '../components/'
 
 export default () => {
   return (
     <Layout>
-      Hello world!
-      <Link to="/blog/">Go to blog</Link>
+      <Hero>
+        <Banner
+          title="Continue exploring"
+          info="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        >
+          <Link to="/tours" className="btn-white">
+            Explore tours
+          </Link>
+        </Banner>
+      </Hero>
     </Layout>
   )
 }
