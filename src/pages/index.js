@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Layout, Hero, Banner, HomeAbout } from '../components/'
+import { Layout, Hero, Banner, HomeAbout, HomeServices } from '../components/'
 
 export default () => {
   return (
@@ -16,6 +16,7 @@ export default () => {
         </Banner>
       </Hero>
       <HomeAbout />
+      <HomeServices />
     </Layout>
   )
 }
