@@ -5,5 +5,21 @@
  */
 
 module.exports = {
-  plugins: ['gatsby-plugin-styled-components'],
+  siteMetadata: {
+    title: 'BackRoads',
+    description: 'Explore awesome tours worldwide.',
+    author: 'Nakib Momin',
+  },
+  plugins: [
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 }
